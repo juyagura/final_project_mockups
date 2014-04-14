@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add A New Sleeping</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/bootstrap.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <h1>New Sleeping</h1>
+    </div>
+
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="type" class="col-md-2 control-label">Type of Sleep</label>
+        <div class="col-md-6">
+          <select name="sleep_type" class="form-control">
+            <option value="1">Night Sleep</option>
+            <option value="2">Nap</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="date" class="col-md-2 control-label">Sleep Date</label>
+        <div class="col-md-6">
+          <input name="sleep_date" type="date" id="date" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="time" class="col-md-2 control-label">Sleep Time</label>
+        <div class="col-md-6">
+          <input name="sleep_time" type="time" id="time" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="duration" class="col-md-2 control-label">Sleep Duration (hours)</label>
+        <div class="col-md-6">
+          <input name="sleep_duration" type="number" id="duration" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="picture" class="col-md-2 control-label">Picture</label>
+        <div class="col-md-6">
+          <input name="picture" type="file" id="picture" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-md-offset-2 col-md-6">
+          <input name="sleep_type" type="submit" class="btn btn-primary" value="Record Sleeping">
+          or <a href="day_view.html">Cancel</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

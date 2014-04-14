@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add A New Diapering</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/bootstrap.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <h1>New Diapering</h1>
+    </div>
+
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="type" class="col-md-2 control-label">Type of Diaper</label>
+        <div class="col-md-6">
+          <select name="diaper_type" class="form-control">
+            <option value="1">Pee</option>
+            <option value="2">Poop</option>
+            <option value="3">Pee+Poop</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="date" class="col-md-2 control-label">Diaper Date</label>
+        <div class="col-md-6">
+          <input name="diaper_date" type="date" id="date" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="time" class="col-md-2 control-label">Diaper Time</label>
+        <div class="col-md-6">
+          <input name="diaper_time" type="time" id="time" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="picture" class="col-md-2 control-label">Picture</label>
+        <div class="col-md-6">
+          <input name="picture" type="file" id="picture" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-md-offset-2 col-md-6">
+          <input name="diaper_type" type="submit" class="btn btn-primary" value="Record Diapering">
+          or <a href="day_view.html">Cancel</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
